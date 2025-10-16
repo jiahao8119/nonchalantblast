@@ -84,7 +84,7 @@ function App() {
           <label style={{ fontWeight: 600 }}>📱 Phone Numbers</label>
           <textarea
             rows={6}
-            placeholder="60123456789\n60198765432"
+            placeholder="place maxxx 100 numbah , 1 per line"
             value={numbers}
             onChange={(e) => setNumbers(e.target.value)}
             style={{
