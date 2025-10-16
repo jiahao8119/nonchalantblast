@@ -31,7 +31,7 @@ function App() {
       const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
       window.open(waUrl, "_blank");
       console.log(`Opened chat for ${phone}`);
-      await delay(10000); // 10 seconds
+      await delay(3000); // 10 seconds
     }
 
     setSending(false);
@@ -101,12 +101,12 @@ function App() {
 
         {/* Message templates */}
         <div style={{ textAlign: "left", marginBottom: "20px" }}>
-          <label style={{ fontWeight: 600 }}>💬 Message Templates</label>
+          <label style={{ fontWeight: 600 }}>💬 Message Tempeh</label>
           {templates.map((temp, index) => (
             <div key={index} style={{ marginTop: "10px", position: "relative" }}>
               <textarea
                 rows={4}
-                placeholder={`Message template ${index + 1}`}
+                placeholder={`Message Tempeh ${index + 1}`}
                 value={temp}
                 onChange={(e) => handleTemplateChange(index, e.target.value)}
                 style={{
